@@ -1,0 +1,10 @@
+.header-container {
+    text-align: center;
+    color: teal;
+    background-color:tan;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}

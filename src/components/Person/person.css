@@ -1,0 +1,22 @@
+.person {
+    margin: 20px;
+    background-color: wheat;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+.person img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 10px;
+    
+}
+.btn-regular {
+    background-color:rgba(160, 81, 45, 0.842);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid salmon;
+    border-radius: 5px;
+    font-size: 18px;
+}
