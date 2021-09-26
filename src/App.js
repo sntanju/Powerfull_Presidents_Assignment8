@@ -5,8 +5,8 @@ import Header from './components/Header/Header';
 function App() {
   return (
     <div>
-      <Header></Header>
-      <Cart></Cart>
+       <Header></Header>   
+       <Cart></Cart>        
     </div>
   );
 }

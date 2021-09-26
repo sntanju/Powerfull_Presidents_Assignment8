@@ -5,13 +5,18 @@ import './Cart.css'
 
 const Cart = () => {
     const [data, setData] = useState([]);
-    const [total, setTotal] = useState([]);
+    const [count, setCount] = useState([]);
 
     useEffect( () => {
         fetch('./data.JSON')
         .then(res => res.json())
         .then(data => setData(data))
     } ,[])
+
+    const handleAddToCart = (person) => {
+        const newCount = [...count, person];
+        setCount(newCount);
+    }
 
    
     return (
@@ -21,11 +26,14 @@ const Cart = () => {
                 data.map( person => <Person
                 key={person.id}
                 person = {person}
+                handleAddToCart={handleAddToCart}
                 ></Person>)
             }
             </div>
             <div>
-                <Total></Total>
+                <Total count = {count} 
+                person = {Person}
+                ></Total>
             </div>
             
         </div>
