@@ -3,6 +3,7 @@
     background-color: wheat;
     text-align: center;
     border-radius: 10px;
+    color:rgb(55, 143, 150);
     
 }
 .person img {
@@ -13,7 +14,7 @@
     
 }
 .btn-regular {
-    background-color: #f18973;
+    background-color: #f18873a6;
     margin: 10px;
     padding: 10px;
     border: 1px solid salmon;
