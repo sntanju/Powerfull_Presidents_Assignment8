@@ -4,7 +4,7 @@ import './Total.css'
 const Total = (props) => {
     
     const {count} = props;
-    const {Name} = props.count;
+    
     let total = 0;
     let name = '';
 
@@ -12,8 +12,7 @@ const Total = (props) => {
         total = total + cost.Salary;
         name = cost.Name;
     }
-    //const Name = props.count[0].Name;
-    //console.log(Name);
+    
     
     return (
         <div className="total-cart-design">
