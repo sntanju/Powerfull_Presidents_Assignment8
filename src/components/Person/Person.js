@@ -1,8 +1,14 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+
 import './person.css'
 
 const Person = (props) => {
-    const { img, Name, Age, Country, Salary} = props.person;
+    const { img, Name, Age, Country, BirthPlace, Salary} = props.person;
+    const btnIcon = <FontAwesomeIcon icon={faShoppingCart} />
+
+
     return (
         <div className="person">
             <div>
@@ -10,8 +16,10 @@ const Person = (props) => {
             <h4><b>Name</b>: {Name}</h4>
             <h4><b>Age</b>: {Age}</h4>
             <h4><b>Country</b>: {Country}</h4>
-            <h4><b>Salary</b>: {Salary}</h4>
-            <button className="btn-regular">Add To Cart</button>
+            <h4><b>Birth Place</b>: {BirthPlace}</h4>
+            <h4><b>Salary</b>: ${Salary}</h4>
+            <button className="btn-regular">{btnIcon} Add To Cart</button>
+            
         </div>  
         </div>
 
