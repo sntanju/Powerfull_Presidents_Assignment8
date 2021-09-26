@@ -6,11 +6,12 @@ const Total = (props) => {
     const {count} = props;
     
     let total = 0;
-    let name = '';
+    let name = [];
 
     for( const cost of count) {
         total = total + cost.Salary;
-        name = cost.Name;
+        name.push(cost.Name);
+        name.push(<br/>);
     }
     
     
